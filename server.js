@@ -62,7 +62,7 @@ app.use((err, req, res, next) => {
 const mongoose = require('mongoose');
 
 //asynchronous connection
-mongoose.connect('mongodb+srv://admin:hcb490vYgFq5vcc4@ift458.bvcjbzu.mongodb.net/users?retryWrites=true&w=majority', {useNewUrlParser: true})
+mongoose.connect('mongodb+srv://admin:<PASSWORD>@ift458.bvcjbzu.mongodb.net/users?retryWrites=true&w=majority', {useNewUrlParser: true})
     .then(() => console.log('MongoDB connection successful'))
     .catch((err) => console.error(err));
 
